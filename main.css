@@ -157,7 +157,6 @@ body{
     bottom:15px;
 }
 .txt p{
-    font-size: 1.7em;
     color:red;
     padding: 8px;
     text-align: center;
@@ -212,7 +211,7 @@ body{
 
 #features .featBox h6{
     padding: 8px  7px 6px 9px;
-    background-color: var(--mainColor1);
+    background-color:rgb(238, 238, 36);
     line-height: 1;
     border-radius: 4px;
     color:var(--offColor2);
@@ -220,3 +219,24 @@ body{
     text-shadow: 60px 50px 40px rgba(2,132,122,.07);
     display:inline-block;
 }
+
+#features .featBox:nth-child(2) h6{
+    background-color: var(--secColor2);
+}
+#features .featBox:nth-child(3) h6{
+    background-color: var(--mainColor1);
+}
+#features .featBox:nth-child(4) h6{
+    background-color: peachpuff;
+}
+#features .featBox:nth-child(5) h6{
+    background-color: rgb(66, 202, 229);
+}
+#features .featBox:nth-child(6) h6{
+    background-color: rgb(235, 178, 178);
+}
+
+
+/* #features .featBox h6:nth-child(3){
+    background-color: red;
+} */

@@ -1,53 +1,58 @@
 @import url('https://fonts.googleapis.com/css2?family=family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    font-family: 'Spartan',sans-serif;
-    --mainColor2:hsl(350, 100%, 28%);
-    --mainColor1:hsl(350, 100%, 88%);
-    --secColor1:hsl(240, 100%, 28%);
-    --secColor2:hsl(240, 100%, 88%);
-    --offColor1:hsl(120, 100%, 28%);
-    --offColor2:hsl(120, 100%, 888%);
+    font-family: 'Spartan', sans-serif;
+    --mainColor2: hsl(350, 100%, 28%);
+    --mainColor1: hsl(350, 100%, 88%);
+    --secColor1: hsl(240, 100%, 28%);
+    --secColor2: hsl(240, 100%, 88%);
+    --offColor1: hsl(120, 100%, 28%);
+    --offColor2: hsl(120, 100%, 888%);
 }
 
 
-h1{
-    font-size:50px;
+h1 {
+    font-size: 50px;
     line-height: 64px;
-    color:var(--mainColor2);
+    color: var(--mainColor2);
 
 }
-h2{
+
+h2 {
     font-size: 46px;
-    line-height:54px;
-    color:var(--mainColor2);
-}
-h4{
-    font-size: 20px;
-    color:var(--mainColor2);
+    line-height: 54px;
+    color: var(--mainColor2);
 }
 
-h6{
+h4 {
+    font-size: 20px;
+    color: var(--mainColor2);
+}
+
+h6 {
     font-weight: 700;
     font-size: 12px;
 }
-p{
-    font-size:1em;
-    color:var(--secColor2);
-    
+
+p {
+    font-size: 1em;
+    color: var(--secColor2);
+
 }
 
-.section-p1{
+.section-p1 {
     padding: 40px 80px;
 }
-.section-m1{
-    margin:40px 0;
+
+.section-m1 {
+    margin: 40px 0;
 }
-body{
-    width:100%;
+
+body {
+    width: 100%;
 }
 
 /* logo
@@ -58,20 +63,20 @@ body{
 } */
 
 /* header */
-#header{
-    display:flex;
+#header {
+    display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 80px;
     background-color: white;
     box-shadow: 0 4px 5px rgba(0, 0, 0, 0.07);
     margin-bottom: 10px;
-    position:sticky;
+    position: sticky;
     top: 0;
-    left:0;
+    left: 0;
 }
 
-#navbar{
+#navbar {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -81,41 +86,41 @@ body{
     z-index: 999;
 }
 
-#navbar li{
+#navbar li {
     list-style-type: none;
-    padding:0 20px;
+    padding: 0 20px;
     position: relative;
 }
 
-#navbar li a{
+#navbar li a {
     text-decoration: none;
     font-size: 1em;
     font-weight: 600;
-    color:#1a1a1a;
-    transition:all .7s ease-out;
+    color: #1a1a1a;
+    transition: all .7s ease-out;
 
 }
 
 #navbar li a:hover,
-#navbar li a.active{
-    color:#088178;
+#navbar li a.active {
+    color: #088178;
 }
 
 #navbar li a.active::after,
-#navbar li a:hover::after{
-    content:'';
+#navbar li a:hover::after {
+    content: '';
     width: 30%;
     height: 2px;
     background-color: #088178;
-    position:absolute;
-    bottom:-4px;
-    left:20px;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
 }
 
 
 /* Hero */
 
-#hero{
+#hero {
     background-image: url('./public/images/joyfulmother.webp');
     height: 90vh;
     width: 100%;
@@ -123,11 +128,12 @@ body{
     background-size: cover;
     background-position: top 25% right 0;
     position: relative;
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.txt{
+
+.txt {
     /* padding: 3% 0; */
     /* padding:50px 0 80px; */
     /* margin:50px ; */
@@ -139,42 +145,47 @@ body{
     border-radius: 8px;
     width: 50%;
     height: 50%;
-    background-color: rgba(255, 255, 255,.5);
+    background-color: rgba(255, 255, 255, .5);
     backdrop-filter: blur(5px);
 }
-.txt h4{
+
+.txt h4 {
     padding-bottom: 15px;
 }
-.txt h1{
-    color:var(--offColor2);
+
+.txt h1 {
+    color: var(--offColor2);
     text-shadow: 0 0 7px var(--mainColor2);
 }
-.txt h1::after{
+
+.txt h1::after {
     content: '+';
     background-color: green;
     border-radius: 50%;
     position: relative;
-    bottom:15px;
+    bottom: 15px;
 }
-.txt p{
-    color:red;
+
+.txt p {
+    color: red;
     padding: 8px;
     text-align: center;
     line-height: 2.1em;
 }
-#hero button{
+
+#hero button {
     /* background-image: url('./public/images/satisfaction.jpg'); */
     background-color: var(--mainColor1);
     /* background-size: contain; */
     /* background-color: transparent; */
-    border:none;
+    border: none;
     padding: 1px 1px 3px 0px;
     border-radius: 80% 44% 40% 56%;
-    color:var(--mainColor2);
+    color: var(--mainColor2);
     font-weight: 700;
     text-shadow: 0 0 5px var(--offColor2);
     font-size: 3.5rem;
-    cursor:pointer;
+    cursor: pointer;
     /* position: absolute; */
     /* bottom:40%; */
     /* left: 30px; */
@@ -182,57 +193,62 @@ body{
     margin: 3rem 0;
 }
 
-#features{
+#features {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
 }
-#features .featBox{
+
+#features .featBox {
     width: 180px;
     text-align: center;
     padding: 25px 15px;
-    box-shadow: 20px 20px 24px rgba(0, 0,0,.1);
-    border:.5px solid black;
+    box-shadow: 20px 20px 24px rgba(0, 0, 0, .1);
+    border: .5px solid black;
     border-radius: 4px;
-    margin:15px 0;
-}   
+    margin: 15px 0;
+}
 
-#features .featBox img{
-    width:100%;
+#features .featBox img {
+    width: 100%;
     margin-bottom: 10px;
 }
 
-#features .featBox:hover{
-    box-shadow: 10px 10px 62px rgba(0233, 230,20,.5);
+#features .featBox:hover {
+    box-shadow: 10px 10px 62px rgba(0233, 230, 20, .5);
 
 }
 
 
-#features .featBox h6{
-    padding: 8px  7px 6px 9px;
-    background-color:rgb(238, 238, 36);
+#features .featBox h6 {
+    padding: 8px 7px 6px 9px;
+    background-color: rgb(238, 238, 36);
     line-height: 1;
     border-radius: 4px;
-    color:var(--offColor2);
+    color: var(--offColor2);
     font-weight: bold;
-    text-shadow: 60px 50px 40px rgba(2,132,122,.07);
-    display:inline-block;
+    text-shadow: 60px 50px 40px rgba(2, 132, 122, .07);
+    display: inline-block;
 }
 
-#features .featBox:nth-child(2) h6{
+#features .featBox:nth-child(2) h6 {
     background-color: var(--secColor2);
 }
-#features .featBox:nth-child(3) h6{
+
+#features .featBox:nth-child(3) h6 {
     background-color: var(--mainColor1);
 }
-#features .featBox:nth-child(4) h6{
+
+#features .featBox:nth-child(4) h6 {
     background-color: peachpuff;
 }
-#features .featBox:nth-child(5) h6{
+
+#features .featBox:nth-child(5) h6 {
     background-color: rgb(66, 202, 229);
 }
-#features .featBox:nth-child(6) h6{
+
+#features .featBox:nth-child(6) h6 {
     background-color: rgb(235, 178, 178);
 }
 
@@ -240,3 +256,20 @@ body{
 /* #features .featBox h6:nth-child(3){
     background-color: red;
 } */
+
+
+#product1 {
+    text-align: center;
+}
+
+#product1 .pro {
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid var(--mainColor1);
+}
+
+#product1 .pro img {
+    width: 100%;
+    border-radius: 20px;
+}
